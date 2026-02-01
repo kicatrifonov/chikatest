@@ -9,7 +9,7 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: "PT Sans", "Arial", sans-serif;
+            font-family: Arial, sans-serif !important;
         }
         
         body {
@@ -19,6 +19,7 @@
             min-height: 100vh;
             padding: 20px;
             overflow-x: hidden;
+            font-family: Arial, sans-serif !important;
         }
         
         @keyframes gradient {
@@ -52,6 +53,7 @@
                         inset 0 0 50px rgba(255, 0, 255, 0.3);
             position: relative;
             overflow: hidden;
+            font-family: Arial, sans-serif !important;
         }
         
         .container::before {
@@ -66,6 +68,10 @@
             filter: blur(20px);
         }
         
+        h1, h2, h3, h4, h5, h6 {
+            font-family: Arial, sans-serif !important;
+        }
+        
         h1 {
             color: #ff00ff;
             text-align: center;
@@ -75,6 +81,8 @@
                          0 0 20px #ff00ff,
                          0 0 30px #ff00ff;
             animation: glitch 3s infinite;
+            font-family: Arial, sans-serif !important;
+            font-weight: bold;
         }
         
         .subtitle {
@@ -83,10 +91,12 @@
             font-size: 1.5em;
             margin-bottom: 30px;
             text-shadow: 0 0 5px #00ffff;
+            font-family: Arial, sans-serif !important;
         }
         
         #start-screen, #question-screen, #result-screen {
             transition: all 0.5s ease;
+            font-family: Arial, sans-serif !important;
         }
         
         .hidden {
@@ -100,6 +110,7 @@
             padding: 25px;
             margin-bottom: 30px;
             box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+            font-family: Arial, sans-serif !important;
         }
         
         .question-number {
@@ -107,6 +118,8 @@
             font-size: 1.3em;
             margin-bottom: 10px;
             text-shadow: 0 0 5px #ffff00;
+            font-family: Arial, sans-serif !important;
+            font-weight: bold;
         }
         
         .question-text {
@@ -114,12 +127,14 @@
             font-size: 1.8em;
             margin-bottom: 25px;
             line-height: 1.4;
+            font-family: Arial, sans-serif !important;
         }
         
         .answers-container {
             display: flex;
             flex-direction: column;
             gap: 15px;
+            font-family: Arial, sans-serif !important;
         }
         
         .answer-btn {
@@ -132,6 +147,7 @@
             cursor: pointer;
             transition: all 0.3s ease;
             text-align: left;
+            font-family: Arial, sans-serif !important;
         }
         
         .answer-btn:hover {
@@ -169,6 +185,7 @@
             text-align: center;
             margin-top: 20px;
             box-shadow: 0 0 30px rgba(255, 255, 0, 0.5);
+            font-family: Arial, sans-serif !important;
         }
         
         .result-title {
@@ -176,6 +193,8 @@
             font-size: 2.5em;
             margin-bottom: 20px;
             text-shadow: 0 0 10px #ffff00;
+            font-family: Arial, sans-serif !important;
+            font-weight: bold;
         }
         
         .result-image {
@@ -191,6 +210,7 @@
             font-size: 1.6em;
             line-height: 1.5;
             margin-bottom: 25px;
+            font-family: Arial, sans-serif !important;
         }
         
         .result-stats {
@@ -198,6 +218,7 @@
             font-size: 1.8em;
             margin-bottom: 20px;
             text-shadow: 0 0 5px #00ffff;
+            font-family: Arial, sans-serif !important;
         }
         
         .advice {
@@ -209,6 +230,7 @@
             background: rgba(255, 0, 255, 0.1);
             border-radius: 10px;
             border: 1px dashed #ff00ff;
+            font-family: Arial, sans-serif !important;
         }
         
         .buttons {
@@ -229,6 +251,7 @@
             cursor: pointer;
             transition: all 0.3s ease;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            font-family: Arial, sans-serif !important;
         }
         
         .btn:hover {
@@ -260,6 +283,7 @@
             color: rgba(255, 255, 255, 0.5);
             margin-top: 40px;
             font-size: 0.9em;
+            font-family: Arial, sans-serif !important;
         }
         
         @media (max-width: 600px) {
@@ -280,43 +304,58 @@
                 font-size: 1.2em;
             }
         }
+        
+        /* Принудительно применяем Arial ко всем элементам */
+        div, span, p, a, button, input, textarea, select, option, label, li, td, th {
+            font-family: Arial, sans-serif !important;
+        }
+        
+        /* Специальные стили для inline-элементов */
+        span {
+            font-family: Arial, sans-serif !important;
+        }
+        
+        /* Для всех текстовых элементов */
+        *:not(i):not(.fa):not(.fas):not(.far):not(.fab):not(.material-icons) {
+            font-family: Arial, sans-serif !important;
+        }
     </style>
 </head>
-<body>
-    <div class="container">
+<body style="font-family: Arial, sans-serif !important;">
+    <div class="container" style="font-family: Arial, sans-serif !important;">
         <!-- Стартовый экран -->
-        <div id="start-screen">
-            <h1 class="glitch">ТЕСТ: КАКОЙ ТЫ ЧИКИЗЯБРИК?</h1>
-            <p class="subtitle">Пройди этот ебаный тест и узнай, насколько ты ебланистый чикизябр!</p>
+        <div id="start-screen" style="font-family: Arial, sans-serif !important;">
+            <h1 class="glitch" style="font-family: Arial, sans-serif !important;">ТЕСТ: КАКОЙ ТЫ ЧИКИЗЯБРИК?</h1>
+            <p class="subtitle" style="font-family: Arial, sans-serif !important;">Пройди этот ебаный тест и узнай, насколько ты ебланистый чикизябр!</p>
             
-            <div style="text-align: center; margin: 40px 0;">
-                <div style="font-size: 1.8em; color: #ffff00; margin-bottom: 20px; text-shadow: 0 0 10px #ffff00;">
+            <div style="text-align: center; margin: 40px 0; font-family: Arial, sans-serif !important;">
+                <div style="font-size: 1.8em; color: #ffff00; margin-bottom: 20px; text-shadow: 0 0 10px #ffff00; font-family: Arial, sans-serif !important;">
                     ⚠️ ВНИМАНИЕ! ⚠️
                 </div>
-                <div style="color: white; font-size: 1.3em; margin-bottom: 30px; line-height: 1.5;">
+                <div style="color: white; font-size: 1.3em; margin-bottom: 30px; line-height: 1.5; font-family: Arial, sans-serif !important;">
                     Тест содержит мат, абсурд и откровенную хуйню.<br>
-                    Не проходи если ты <span style="color:#ff00ff;">сопляк</span> или <span style="color:#00ffff;">зануда</span>!
+                    Не проходи если ты <span style="color:#ff00ff; font-family: Arial, sans-serif !important;">сопляк</span> или <span style="color:#00ffff; font-family: Arial, sans-serif !important;">зануда</span>!
                 </div>
             </div>
             
-            <div style="text-align: center;">
-                <button id="start-btn" class="btn start-btn pulse">ПОГНАЛИ НАХУЙ!</button>
+            <div style="text-align: center; font-family: Arial, sans-serif !important;">
+                <button id="start-btn" class="btn start-btn pulse" style="font-family: Arial, sans-serif !important;">ПОГНАЛИ НАХУЙ!</button>
             </div>
             
-            <div class="footer">
+            <div class="footer" style="font-family: Arial, sans-serif !important;">
                 © 2023 Чикизябрики Индастриз. Все права проебаны.
             </div>
         </div>
         
         <!-- Экран с вопросами -->
-        <div id="question-screen" class="hidden">
-            <h2 class="subtitle">ВОПРОС <span id="current-question">1</span> ИЗ 20</h2>
+        <div id="question-screen" class="hidden" style="font-family: Arial, sans-serif !important;">
+            <h2 class="subtitle" style="font-family: Arial, sans-serif !important;">ВОПРОС <span id="current-question" style="font-family: Arial, sans-serif !important;">1</span> ИЗ 20</h2>
             
-            <div class="question-container">
-                <div class="question-number">ТВОЙ ПИЗДЕЦ-ВОПРОС:</div>
-                <div class="question-text" id="question-text">Загрузка вопроса...</div>
+            <div class="question-container" style="font-family: Arial, sans-serif !important;">
+                <div class="question-number" style="font-family: Arial, sans-serif !important;">ТВОЙ ПИЗДЕЦ-ВОПРОС:</div>
+                <div class="question-text" id="question-text" style="font-family: Arial, sans-serif !important;">Загрузка вопроса...</div>
                 
-                <div class="answers-container" id="answers-container">
+                <div class="answers-container" id="answers-container" style="font-family: Arial, sans-serif !important;">
                     <!-- Кнопки ответов будут здесь -->
                 </div>
             </div>
@@ -325,41 +364,41 @@
                 <div class="progress-bar" id="progress-bar"></div>
             </div>
             
-            <div style="text-align: center; margin-top: 20px;">
-                <button id="next-btn" class="btn hidden">ДАЛЬШЕ, НАХУЙ!</button>
+            <div style="text-align: center; margin-top: 20px; font-family: Arial, sans-serif !important;">
+                <button id="next-btn" class="btn hidden" style="font-family: Arial, sans-serif !important;">ДАЛЬШЕ, НАХУЙ!</button>
             </div>
         </div>
         
         <!-- Экран с результатом -->
-        <div id="result-screen" class="hidden">
-            <h1 class="glitch">ТЫ — <span id="result-type">ЧИКИЗЯБРИК!</span></h1>
+        <div id="result-screen" class="hidden" style="font-family: Arial, sans-serif !important;">
+            <h1 class="glitch" style="font-family: Arial, sans-serif !important;">ТЫ — <span id="result-type" style="font-family: Arial, sans-serif !important;">ЧИКИЗЯБРИК!</span></h1>
             
-            <div class="result-card">
-                <div class="result-title" id="result-title">ТИП: Загрузка...</div>
+            <div class="result-card" style="font-family: Arial, sans-serif !important;">
+                <div class="result-title" id="result-title" style="font-family: Arial, sans-serif !important;">ТИП: Загрузка...</div>
                 
-                <div id="result-image-container">
+                <div id="result-image-container" style="font-family: Arial, sans-serif !important;">
                     <!-- Картинка результата будет здесь -->
                 </div>
                 
-                <div class="result-stats">
-                    Уровень чикизябрости: <span id="result-percentage">0%</span>
+                <div class="result-stats" style="font-family: Arial, sans-serif !important;">
+                    Уровень чикизябрости: <span id="result-percentage" style="font-family: Arial, sans-serif !important;">0%</span>
                 </div>
                 
-                <div class="result-description" id="result-description">
+                <div class="result-description" id="result-description" style="font-family: Arial, sans-serif !important;">
                     Описание загружается...
                 </div>
                 
-                <div class="advice" id="result-advice">
+                <div class="advice" id="result-advice" style="font-family: Arial, sans-serif !important;">
                     Совет на неделю: Загрузка...
                 </div>
             </div>
             
             <div class="buttons">
-                <button id="restart-btn" class="btn">ПРОЙТИ ЕЩЁ РАЗ!</button>
-                <button id="share-btn" class="btn">ПОДЕЛИТЬСЯ ХУЙНЁЙ</button>
+                <button id="restart-btn" class="btn" style="font-family: Arial, sans-serif !important;">ПРОЙТИ ЕЩЁ РАЗ!</button>
+                <button id="share-btn" class="btn" style="font-family: Arial, sans-serif !important;">ПОДЕЛИТЬСЯ ХУЙНЁЙ</button>
             </div>
             
-            <div class="footer">
+            <div class="footer" style="font-family: Arial, sans-serif !important;">
                 © 2023 Чикизябрики Индастриз. Этот тест — полная хуйня, не принимай близко к сердцу.
             </div>
         </div>
@@ -749,7 +788,7 @@
             
             const imageContainer = document.getElementById('result-image-container');
             imageContainer.innerHTML = `
-                <div style="font-size: 100px; margin: 20px 0;">
+                <div style="font-size: 100px; margin: 20px 0; font-family: Arial, sans-serif !important;">
                     ${resultType.image}
                 </div>
             `;
